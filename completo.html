@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login </title>
+  <!-- Adicionando Font Awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('https://th.bing.com/th/id/R.f9534bfc6e01b01fe41996a6d68ce6fb?rik=uqaT6zfcfb8mSw&pid=ImgRaw&r=0') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    .login-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+      backdrop-filter: blur(8px);
+      width: 350px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .input-box {
+      margin: 20px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .social-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .social-buttons button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .google-btn {
+      background-color: #db4437;
+      color: #fff;
+    }
+
+    .microsoft-btn {
+      background-color: #2f2f2f;
+      color: #fff;
+    }
+
+    .facebook-btn {
+      background-color: #4267B2;
+      color: #fff;
+    }
+
+    .create-account {
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    .create-account a {
+      color: #7597de;
+      text-decoration: none;
+    }
+
+    .create-account a:hover {
+      text-decoration: underline;
+    }
+    
+    .social-buttons i {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="login-container">
+    <h2>Login</h2>
+    <div class="input-box">
+      <input type="text" placeholder="Nome de usuário ou e-mail" required>
+      <input type="password" placeholder="Senha" required>
+    </div>
+    <div class="social-buttons">
+      <button class="google-btn">
+        <i class="fab fa-google"></i> Entrar com Google
+      </button>
+      <button class="microsoft-btn">
+        <i class="fab fa-microsoft"></i> Entrar com Microsoft
+      </button>
+      <button class="facebook-btn">
+        <i class="fab fa-facebook-f"></i> Entrar com Facebook
+      </button>
+    </div>
+    <div class="create-account">
+      <p>Não tem conta? <a href="tela_criarconta.html">Crie uma aqui</a></p>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Conta </title>
+  <!-- Adicionando Font Awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('https://th.bing.com/th/id/R.f9534bfc6e01b01fe41996a6d68ce6fb?rik=uqaT6zfcfb8mSw&pid=ImgRaw&r=0') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    .signup-container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+      backdrop-filter: blur(8px);
+      width: 350px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .input-box {
+      margin: 20px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .signup-btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #28a745;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .login-link {
+      margin-top: 20px;
+      color: #fff;
+    }
+
+    .login-link a {
+      color: #7597de;
+      text-decoration: none;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+    
+    .signup-btn i {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="signup-container">
+    <h2>Criar Conta</h2>
+    <div class="input-box">
+      <input type="text" placeholder="Nome completo" required>
+      <input type="email" placeholder="E-mail" required>
+      <input type="password" placeholder="Senha" required>
+      <input type="password" placeholder="Confirmar senha" required>
+    </div>
+    <button class="signup-btn">
+      <i class="fas fa-user-plus"></i> Criar Conta
+    </button>
+    <div class="login-link">
+      <p>Já tem uma conta? <a href="rascunho.html">Faça login aqui</a></p>
+    </div>
+  </div>
+</body>
+</html>
